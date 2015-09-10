@@ -57,6 +57,6 @@ def destroy
       @movie = Movie.find(params[:id])
     end
     def movie_params
-      params.require(:movie).permit(:title, :description, :director, :movie_length, :rating)
+      params.require(:movie).permit(:title, :description, :director, :movie_length, :rating, :image)
     end
 end
