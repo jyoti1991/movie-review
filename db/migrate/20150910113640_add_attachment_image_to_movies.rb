@@ -7,5 +7,5 @@ class AddAttachmentImageToMovies < ActiveRecord::Migration
 
   def self.down
     remove_attachment :movies, :image
-  end
+end
 end

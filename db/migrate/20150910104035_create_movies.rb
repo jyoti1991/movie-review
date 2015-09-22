@@ -6,7 +6,7 @@ class CreateMovies < ActiveRecord::Migration
       t.string :director
       t.string :movie_length
       t.string :rating
-
+      t.attachment :video_file
       t.timestamps
     end
   end

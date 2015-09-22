@@ -2,8 +2,12 @@
   <div class="panel-body">
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag @movie.image.url(:medium) %>
-       <div class="star-rating" data-score= <%= @avg_review %> ></div>
+        <%= image_tag @movie.image.url(:medium) %></div>
+<p>
+<strong>Video_file:</strong>
+<%= video_tag @movie.video_file.url,:size => "320x240", :controls => true, autobuffer: true %>
+        <div class="col-md-">
+        <div class="star-rating" data-score= <%= @avg_review %>></div>
        <em><%="#{@reviews.length} reviews" %></em>
          <div class="table-responsive">
           <table class="table">
@@ -33,7 +37,7 @@
       <%= link_to 'Write A Review', new_movie_review_path(@movie) %>
     </div>
      </div>
-     <div class="col-md-7 col-md-offset-1" >
+     <div class="col-md-6 col-md-offset-1" >
        <h1 class="review_title"><%= @movie.title %></h1>
        <p><%= @movie.description %></p>
        <% if @reviews.blank? %>

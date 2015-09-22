@@ -1,28 +1,8 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: movie_review_development
+  database: movie_review1111_development
   host: localhost
   pool: 5
   username: username
   password: password
-
-
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: movie_review_development
-  host: localhost
-  pool: 5
-  username: username
-  password: password
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: movie_review_development
-  host: localhost
-  pool: 5
-  username: username
-  password: password
-  
